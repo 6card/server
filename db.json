@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "id": "tYBkXlI8f",
+      "name": "Tutorials",
+      "description": "Tutorials",
+      "parentId": null,
+      "sortOrder": 0
+    },
+    {
+      "id": "Sh5MasJtP",
+      "name": "Tutorials",
+      "description": "Tutorials",
+      "parentId": "tYBkXlI8f",
+      "sortOrder": 0
+    },
+    {
+      "id": "CDpnolSF_",
+      "name": "Tutorials",
+      "description": "Tutorials",
+      "parentId": "tYBkXlI8f",
+      "sortOrder": 1
+    },
+    {
+      "id": "_ktFGgs1v",
+      "name": "Tutorials2",
+      "description": "Tutorials2",
+      "parentId": "tYBkXlI8f",
+      "sortOrder": 2
+    },
+    {
+      "id": "I6TyC_6_k",
+      "name": "Tutorials2",
+      "description": "Tutorials2",
+      "parentId": "tYBkXlI8f",
+      "sortOrder": 2
+    },
+    {
+      "id": "CNhXM8FLO",
+      "name": "Tutorials2",
+      "description": "Tutorials2",
+      "parentId": "tYBkXlI8f",
+      "sortOrder": 2
+    },
+    {
+      "id": "MOLZrFtEj",
+      "name": "Tutorials2",
+      "description": "Tutorials2",
+      "parentId": "CNhXM8FLO",
+      "sortOrder": 2
+    },
+    {
+      "id": "cFSffjaYu",
+      "name": "Tutorials2",
+      "description": "Tutorials2",
+      "parentId": null,
+      "sortOrder": 2
+    }
+  ]
+}
