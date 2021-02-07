@@ -10,7 +10,7 @@ const categoryService = {
     return res.data || {};
   },
   update: async (id, data) => {
-    let res = await axios.put(`/api/categories/`, { id, data })
+    let res = await axios.put(`/api/categories`, { id, data })
     return res.data || {};
   },
   delete: async (id) => {

@@ -62,7 +62,7 @@ function CategoriesList(props) {
         return (
             <ul className="list">
                 {(categories && categories.length > 0) ? (
-                    categories.map(cat => <li key={cat.id}><Link to={`${match.url}/${cat.id}`}>{cat.name}</Link></li>)
+                    categories.map(cat => <li key={cat.id}><Link to={`${match.url}/${cat.id}`}>{cat.name}</Link> | <Link to={`/category/edit/${cat.id}`}>edit</Link></li>)
                 ) : (
                     <p>No categories found</p>
                 )}

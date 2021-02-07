@@ -9,6 +9,7 @@ import {
 
 
 import Category from './Category';
+import CategoryEdit from './CategoryEdit';
 
 function App() {
   
@@ -20,9 +21,13 @@ function App() {
           <Link to="/category">Category</Link>
           <Link to="/category/tYBkXlI8f">Categories</Link>
         <Switch>
+        <Route path="/category/edit/:id">
+            <CategoryEdit />
+          </Route>
           <Route path="/category">
             <Category />
           </Route>
+          
           <Route exact path="/">
             <Home />
           </Route>

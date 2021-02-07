@@ -66,9 +66,9 @@ module.exports = (app) => {
   })
 
   app.put(`/categories`, async (req, res) => {
-    const { id } = req.body;
+    const { id, data } = req.body;
 
-    const category = categoryModel.update(id, req.body);
+    const category = categoryModel.update(id, data);
 
     return res.status(202).send({
       error: false,
