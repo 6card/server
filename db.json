@@ -2,49 +2,45 @@
   "categories": [
     {
       "id": "tYBkXlI8f",
-      "name": "afsdfsd",
-      "description": "fdfdfg",
-      "parentId": "",
-      "sortOrder": 0,
-      "data": {
-        "name": "Tutorials",
-        "description": "werwer"
-      }
-    },
-    {
-      "id": "Sh5MasJtP",
-      "name": "Tutorials",
-      "description": "Tutorials",
-      "parentId": "tYBkXlI8f",
+      "name": "MS Word",
+      "description": "MS Word",
+      "parentId": null,
       "sortOrder": 0
     },
     {
       "id": "CDpnolSF_",
-      "name": "Tutorials",
-      "description": "Tutorials",
+      "name": "1. Базовый курс",
+      "description": "1. Базовый курс",
       "parentId": "tYBkXlI8f",
       "sortOrder": 1
     },
     {
       "id": "_ktFGgs1v",
-      "name": "ttrre",
-      "description": "Tutorials2",
+      "name": "2. Продвинутый курс",
+      "description": "2. Продвинутый курс",
       "parentId": "tYBkXlI8f",
       "sortOrder": 2
     },
     {
       "id": "I6TyC_6_k",
-      "name": "Tutorials2",
-      "description": "Tutorials2",
+      "name": "3. Мастерский курс",
+      "description": "3. Мастерский курс",
       "parentId": "tYBkXlI8f",
-      "sortOrder": 2
+      "sortOrder": 3
+    },
+    {
+      "id": "Sh5MasJtP",
+      "name": "Tutorials",
+      "description": "Tutorials",
+      "parentId": null,
+      "sortOrder": 0
     },
     {
       "id": "CNhXM8FLO",
       "name": "Tutorials2",
       "description": "Tutorials2",
       "parentId": "tYBkXlI8f",
-      "sortOrder": 2
+      "sortOrder": "4"
     },
     {
       "id": "MOLZrFtEj",
@@ -59,6 +55,1208 @@
       "description": "Tutorials2",
       "parentId": null,
       "sortOrder": 2
+    }
+  ],
+  "videos": [
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "1f7df665-b9c6-4585-bfc3-5cd42c19cf8e",
+      "name": "1. Гид по интерфейсу",
+      "sortOrder": 1
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "936c2ba4-786f-478b-8216-6fbf12d81a34",
+      "name": "10. Сохранение документа в других форматах",
+      "sortOrder": 10
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "1780279d-58e2-42f6-9d5b-0a5de9f16abd",
+      "name": "11. Сохранение документа в PDF формате",
+      "sortOrder": 11
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "f57bdb7d-9f87-4ce7-a79d-67dc81d7a968",
+      "name": "12. Недавние документы",
+      "sortOrder": 12
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "1e3d777c-0756-41df-9de3-160ea0ca8404",
+      "name": "13. Выделение текста",
+      "sortOrder": 13
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "e24194b1-411d-4444-ab7f-5bed2593c288",
+      "name": "14. Удаление текста",
+      "sortOrder": 14
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "d4b949eb-9f36-40ac-8ed1-3d6d9c85c4bb",
+      "name": "15. Команды Отменить, Вернуть и Повторить",
+      "sortOrder": 15
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "60886c5b-0660-45d2-896e-77307f26bf41",
+      "name": "16. Добавление отступов",
+      "sortOrder": 16
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "45d96a09-a13d-40d9-b389-37a9f4bd29f3",
+      "name": "17. Вставка символов",
+      "sortOrder": 17
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "9a2d3e8c-b85f-4abf-b216-5ae2327cfd9f",
+      "name": "18. Команды Копировать и Вставить",
+      "sortOrder": 18
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "dee3b5aa-c694-422b-adb0-667ed7b9b21a",
+      "name": "19. Вставка текста с учетом форматирования",
+      "sortOrder": 19
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "a696bc5e-f456-4354-bfb6-7dee13b49479",
+      "name": "2. Навигация по документу",
+      "sortOrder": 2
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "86859e99-3af8-4a90-bb20-87a0abcd8592",
+      "name": "20. Команда Вырезать",
+      "sortOrder": 20
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "e9f9bc99-8a80-4603-ba13-3254f34f6cc4",
+      "name": "21. Буфер обмена",
+      "sortOrder": 21
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "3994b46e-5df1-4427-bfa5-c7481f7d1038",
+      "name": "22. Выбор шрифта",
+      "sortOrder": 22
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "4b5c9421-5af8-4027-81b6-9d8e774c10d0",
+      "name": "23. Изменение регистра",
+      "sortOrder": 23
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "3af50216-34af-400d-90ee-4504a2e1e224",
+      "name": "24. Начертания",
+      "sortOrder": 24
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "195404f8-62f5-4a8d-9853-080a500f1afa",
+      "name": "25. Выделение цветом и зачеркивание текста",
+      "sortOrder": 25
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "a09f0020-e2cd-412b-9014-7bc3bdf53feb",
+      "name": "26. Подстрочный и надстрочный знаки",
+      "sortOrder": 26
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "762fa825-1688-4508-92dc-e0a948b885d6",
+      "name": "27. Цвет текста",
+      "sortOrder": 27
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "6e2ca473-fc73-4e0a-85d7-02e2b86b3684",
+      "name": "28. Текстовые эффекты",
+      "sortOrder": 28
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "e3d9f443-9039-4723-9d9f-ecd012737a62",
+      "name": "29. Выравнивание абзаца",
+      "sortOrder": 29
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "022f6718-08d2-4f39-83ed-9b51bfb2e9eb",
+      "name": "3. Режимы просмотра документа",
+      "sortOrder": 3
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "1a832744-58a4-4478-a7c0-fc0e968579a6",
+      "name": "30. Настройка отступов абзаца",
+      "sortOrder": 30
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "56d3f217-6144-4a5c-9c2a-3987e7892c9f",
+      "name": "31. Отступы между абзацами",
+      "sortOrder": 31
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "9927acd1-e853-4248-ab99-8f0ed81386e5",
+      "name": "32. Междустрочный интервал",
+      "sortOrder": 32
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "330d6cee-def2-4601-916c-f72c6a8afa22",
+      "name": "33. Фон абзаца",
+      "sortOrder": 33
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "ad72c6e2-52be-45ed-aabe-a039dec925d4",
+      "name": "34. Границы абзаца",
+      "sortOrder": 34
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "6e31672d-7574-4064-b6fc-09b99f372d49",
+      "name": "35. Форматирование по образцу",
+      "sortOrder": 35
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "c4132bb9-35e8-4606-b4eb-a199b32d50c8",
+      "name": "36. Создание списков",
+      "sortOrder": 36
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "d39cb2f1-b03c-4984-88bd-a10bf29695e4",
+      "name": "37. Настройка отступов списка",
+      "sortOrder": 37
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "66d82ca4-9fa7-4a1c-8597-30bcb3c3b5d4",
+      "name": "38. Настройка маркеров",
+      "sortOrder": 38
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "13743b24-ed98-4e28-b62c-2e7fd853270f",
+      "name": "39. Настройка нумерации",
+      "sortOrder": 39
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "080e8357-ba49-44cb-ac1e-8f42e443b1f1",
+      "name": "4. Панель быстрого доступа",
+      "sortOrder": 4
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "08177e26-a06b-48ff-96eb-c392070d0ee3",
+      "name": "40. Дополнительные параметры нумерации",
+      "sortOrder": 40
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "e7fc77d2-a83b-4521-bd4c-924fe9e7ecdb",
+      "name": "41. Размер страницы",
+      "sortOrder": 41
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "e39b0db7-d6ab-44e5-8ae1-56ba4c8b4302",
+      "name": "42. Ориентация страницы",
+      "sortOrder": 42
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "3f84a3a8-153b-4484-822f-bcd8ac966e78",
+      "name": "43. Настройка полей",
+      "sortOrder": 43
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "59bb66e5-882a-4534-af37-e2e229f1723e",
+      "name": "44. Зеркальные поля",
+      "sortOrder": 44
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "ac92473e-8df8-4023-8085-815687c7772f",
+      "name": "45. Автоматическая расстановка переносов",
+      "sortOrder": 45
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "a363b231-573a-424c-a584-1ebed46cd30f",
+      "name": "46. Расстановка переносов вручную",
+      "sortOrder": 46
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "ff9241a7-6071-4a21-b069-1987c8bf53f5",
+      "name": "47. Неразрывный пробел и неразрывный дефис",
+      "sortOrder": 47
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "3b113d4a-55cd-419d-b02d-e34b3cedcbe0",
+      "name": "48. Текстовая подложка",
+      "sortOrder": 48
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "80c869de-cad3-42b2-8eab-9ef8afb44e7e",
+      "name": "49. Подложка в виде рисунка",
+      "sortOrder": 49
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "48d776f3-5a00-4370-afff-055da9a75e8d",
+      "name": "5. Создание нового документа",
+      "sortOrder": 5
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "8e0e3059-3121-4762-bd18-cdb9aeaeb9dd",
+      "name": "50. Колонки текста",
+      "sortOrder": 50
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "1af595ce-7ff7-47a4-a489-cda2381acccf",
+      "name": "51. Настройка ширины колонок",
+      "sortOrder": 51
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "ce21e765-91fe-4ac7-9f49-e15e33360b79",
+      "name": "52. Разрыв колонки",
+      "sortOrder": 52
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "0234e672-3b35-4768-b879-edcf36582d84",
+      "name": "53. Фон страницы. Градиентная заливка",
+      "sortOrder": 53
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "778687a5-29cf-4305-a89b-954473304e90",
+      "name": "54. Фон страницы. Другие способы заливки",
+      "sortOrder": 54
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "9ee5161e-0d6e-4c72-a379-3fecb1ea3d38",
+      "name": "55. Границы страницы",
+      "sortOrder": 55
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "80c79ec1-8271-4c67-a190-13f0add288c1",
+      "name": "56. Предпросмотр и печать документа",
+      "sortOrder": 56
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "5b74a157-16a0-469f-939e-365412fd69dd",
+      "name": "57. Настройка печати",
+      "sortOrder": 57
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "c4390e34-dcf2-4d7d-bb24-247aa31e7774",
+      "name": "58. Дополнительные возможности печати",
+      "sortOrder": 58
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "42285f9d-6012-46f0-b083-97a07b989ee2",
+      "name": "6. Наполнение документа текстом",
+      "sortOrder": 6
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "373de97c-62ea-43eb-9666-aee20eeedbfa",
+      "name": "7. Сохранение документа",
+      "sortOrder": 7
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "92a06ef2-985f-44bd-a8eb-f681342b974d",
+      "name": "8. Сохранение документов на OneDrive",
+      "sortOrder": 8
+    },
+    {
+      "categoryId": "CDpnolSF_",
+      "id": "a0e615eb-56ed-4efe-88bc-9ca37c6e7515",
+      "name": "9. Открытие документа",
+      "sortOrder": 9
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "574011f5-4b37-4890-9aea-a6839dc3f0dd",
+      "name": "1. Автоматическая проверка правописания",
+      "sortOrder": 1
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "37ff5aa2-80c6-46b2-b8a4-d3a9a40afe55",
+      "name": "10. Позиции табуляции по умолчанию",
+      "sortOrder": 10
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "3d20780a-e39a-4a46-8403-27973c81b815",
+      "name": "11. Настройка собственных позиций табуляции",
+      "sortOrder": 11
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "03a26053-af44-4720-9e33-f43e398c2227",
+      "name": "12. Виды табуляции",
+      "sortOrder": 12
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "7a92a2fe-2ac1-4e89-aad0-b6172521f452",
+      "name": "13. Диалоговое окно табуляции",
+      "sortOrder": 13
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "6c856c61-3958-481a-9184-326c03a715b6",
+      "name": "14. Использование заполнителей",
+      "sortOrder": 14
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "d6d0b513-fda3-45a5-9a9c-5ca7d33a2ad7",
+      "name": "15. Создание, сохранение и использование фрагментов авто-текста",
+      "sortOrder": 15
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "6ee749be-abe3-4a1a-b0f1-b68fe9a640a2",
+      "name": "16. Редактирование и удаление фрагментов авто-текста",
+      "sortOrder": 16
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "6c2deeca-d07f-4f4d-b14b-8114cdc1ff56",
+      "name": "17. Что такое колонтитулы",
+      "sortOrder": 17
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "95302de4-0f0d-460f-a8d9-f47780f9280e",
+      "name": "18. Добавление информации в колонтитулы",
+      "sortOrder": 18
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "915178f4-214b-4543-a0ae-38082774e1ae",
+      "name": "19. Редактирование, табуляция и положение колонтитулов",
+      "sortOrder": 19
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "b9b04637-57e0-491b-9a0f-217c5528e0dd",
+      "name": "2. Проверка орфографии и грамматики",
+      "sortOrder": 2
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "0abc2693-2c59-4b0c-9cc8-f6e4e76776f4",
+      "name": "20. Добавление объектов в колонтитул",
+      "sortOrder": 20
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "64550424-622a-45ea-ace5-7a61aed4109b",
+      "name": "21. Нумерация страниц",
+      "sortOrder": 21
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "3bb7e667-79cc-4991-b0eb-98d8366372a4",
+      "name": "22. Особый колонтитул для первой страницы",
+      "sortOrder": 22
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "4c5e1922-8ca7-4364-a415-8ec3187d126d",
+      "name": "23. Разные колонтитулы на четных и нечетных страницах",
+      "sortOrder": 23
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "01d5ff0c-5a44-43e4-9a08-3d3106dc02ab",
+      "name": "24. Выделение объектов",
+      "sortOrder": 24
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "a2c18ec9-9054-422f-b69e-562a8ca76eff",
+      "name": "25. Изменение размера объектов",
+      "sortOrder": 25
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "51f4a6b2-2dd4-460a-a477-9b2dd3b013e1",
+      "name": "26. Перемещение объектов",
+      "sortOrder": 26
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "4653b316-c6e7-485c-bdb0-7a2438cf1097",
+      "name": "27. Поворот объектов",
+      "sortOrder": 27
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "0a2adb6a-aa29-4e35-886b-ec32c78dc33e",
+      "name": "28. Обтекание и положение объекта",
+      "sortOrder": 28
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "7507728c-7989-484a-91b8-e9c6f9331359",
+      "name": "29. Порядок объектов",
+      "sortOrder": 29
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "aa6fdef6-0b6e-4e10-b64c-048f1a0bb85f",
+      "name": "3. Возможности автозамены",
+      "sortOrder": 3
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "9b88c160-a783-4291-a816-68b2a52b71ae",
+      "name": "30. Область выделения",
+      "sortOrder": 30
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "c5d698ac-368d-442c-96f0-ad488bda63b0",
+      "name": "31. Выравнивание объектов",
+      "sortOrder": 31
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "f31e2f8e-d1de-46e7-ad71-0265edf71028",
+      "name": "32. Сетка",
+      "sortOrder": 32
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "3e6ecef9-178f-4942-b863-d235e2f44cca",
+      "name": "33. Группировка объектов",
+      "sortOrder": 33
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "96c162ae-2348-4df4-be92-82f44a5dde28",
+      "name": "34. Вставка фигуры",
+      "sortOrder": 34
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "0c06f5fb-ef68-40c8-b17f-9c78fd2874c3",
+      "name": "35. Изменение конфигурации фигур",
+      "sortOrder": 35
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "d514b4fb-6083-414e-b81b-3879518ecdff",
+      "name": "36. Копирование, преобразование и удаление фигур",
+      "sortOrder": 36
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "0b2ea26f-3fc0-43d2-90ce-a709f6f2abb2",
+      "name": "37. Блок-схемы и полотно",
+      "sortOrder": 37
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "f5b4612e-10d9-489a-abde-f6765d9bf5a7",
+      "name": "38. Форматирование фигур. Стили",
+      "sortOrder": 38
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "f9a1ec45-cbda-4d47-97a6-d645ac16a4ac",
+      "name": "39. Форматирование фигур. Заливка, контур, эффекты",
+      "sortOrder": 39
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "1aed291d-8c0a-4ab0-99ee-ba0190e6cca2",
+      "name": "4. Добавление и удаление слов в списке автозамены",
+      "sortOrder": 4
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "83c3065e-d1bf-4d18-a564-9f6c9dbc9577",
+      "name": "40. Форматирование фигур. Дополнительные возможности",
+      "sortOrder": 40
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "292783bf-f638-43f7-b9a1-c00d15f2e908",
+      "name": "41. Добавление текста к фигурам",
+      "sortOrder": 41
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "1c329e4f-3b76-436b-a0ae-101b8edf0957",
+      "name": "42. WordArt",
+      "sortOrder": 42
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "e0f1b710-9841-4cad-b9af-1ff59559bf09",
+      "name": "43. Добавление изображения",
+      "sortOrder": 43
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "00379493-7207-4208-bbd0-c160929baf5e",
+      "name": "44. Добавление скриншотов",
+      "sortOrder": 44
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "da0f045c-f0eb-4527-b4dd-c3d32134b049",
+      "name": "45. Обрезка изображения",
+      "sortOrder": 45
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "0258d194-b39a-4b75-88a1-93474ffc4c44",
+      "name": "46. Удаление обрезанных областей",
+      "sortOrder": 46
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "5f3f6229-7012-4440-aba2-4f77c167a561",
+      "name": "47. Удаление фона",
+      "sortOrder": 47
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "4e5a729d-240f-4f19-bd4a-54c440d8d1b1",
+      "name": "48. Коррекция и цвет изображения",
+      "sortOrder": 48
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "92da7355-efb3-4e6c-95d4-d96c788ccf86",
+      "name": "49. Эффекты и стили изображения",
+      "sortOrder": 49
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "cd767227-201c-49a3-9657-e3b3323d0a3e",
+      "name": "5. Отключение автозамены",
+      "sortOrder": 5
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "0667754b-03d2-4794-9512-cfb29c34700b",
+      "name": "50. Добавление SmartArt",
+      "sortOrder": 50
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "78c8c440-58bf-4cee-8bb5-8a6ea9a61de0",
+      "name": "51. Текст и картинки в SmartArt",
+      "sortOrder": 51
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "01c6db9a-d695-48f1-9988-273a13f8e971",
+      "name": "52. Добавление и перемещение фигур",
+      "sortOrder": 52
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "fda85ed7-f391-4038-852e-0240d903535a",
+      "name": "53. Работа с иерархией",
+      "sortOrder": 53
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "b6df7391-1370-488c-9022-8b1700a7034b",
+      "name": "54. Изменение макета",
+      "sortOrder": 54
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "e7fe6cca-16ba-45eb-be21-34b2ce868d11",
+      "name": "55. Изменение стиля всего объекта",
+      "sortOrder": 55
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "84480c8b-fa3d-424d-b4af-8dfd301f3b9c",
+      "name": "56. Изменение стиля отдельных фигур",
+      "sortOrder": 56
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "a7bea789-0792-4702-accd-022dc2c3d6e5",
+      "name": "57. Создание таблиц",
+      "sortOrder": 57
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "8274989b-61ba-42d5-8e54-e377678f6a79",
+      "name": "58. Удаление таблиц",
+      "sortOrder": 58
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "eddb8a9b-fd81-42de-bb58-c6412a721b02",
+      "name": "59. Ввод данных",
+      "sortOrder": 59
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "420fd12f-8fbd-4dc8-a276-49115a4e726f",
+      "name": "6. Функция «Отобразить все знаки»",
+      "sortOrder": 6
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "0973b213-36c8-467a-bcef-5a730bfac91a",
+      "name": "60. Выделение ячеек",
+      "sortOrder": 60
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "570f9ff8-77af-403a-8e15-04f68b311f34",
+      "name": "61. Добавление строк и столбцов",
+      "sortOrder": 61
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "100807aa-9862-4d0c-8a51-e7a70ef22724",
+      "name": "62. Удаление строк и столбцов",
+      "sortOrder": 62
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "da7ee9e9-7fe0-49bd-839c-217e5a32e136",
+      "name": "63. Изменение размера ячеек вручную",
+      "sortOrder": 63
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "53b7add6-13db-4c26-af44-3904b4f689ac",
+      "name": "64. Автоподбор ширины столбцов",
+      "sortOrder": 64
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "9d23658f-0f38-4119-be2a-b0c5ccb7d364",
+      "name": "65. Другие способы настройки размера ячеек",
+      "sortOrder": 65
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "de8ec14f-8529-459e-9c0f-d180ed095ac9",
+      "name": "66. Объединение ячеек",
+      "sortOrder": 66
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "9ee49778-b61e-4545-94e7-7c1509892c10",
+      "name": "67. Разделение ячеек",
+      "sortOrder": 67
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "974961d3-6862-4d3e-ae0a-148c77b9b07e",
+      "name": "68. Форматирование стиля таблиц",
+      "sortOrder": 68
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "f273f51a-295d-407c-9488-6dc325de964f",
+      "name": "69. Изменение заливки и границ",
+      "sortOrder": 69
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "d88e7d7f-c854-4fd9-9aa3-409d05264606",
+      "name": "7. Создание многоуровневых списков",
+      "sortOrder": 7
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "925151bd-06c3-4103-bccf-e681a5575af5",
+      "name": "70. Дополнительные возможности форматирования таблиц",
+      "sortOrder": 70
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "95d3aa59-094c-4840-a347-317404e83de0",
+      "name": "71. Форматирование текста в таблицах",
+      "sortOrder": 71
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "2b942db6-0bca-47b5-b833-678db6d524ad",
+      "name": "72. Создание диаграммы",
+      "sortOrder": 72
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "2be10597-09ae-4ded-a427-4df91beaf1cd",
+      "name": "73. Другие виды диаграмм",
+      "sortOrder": 73
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "0514d471-b83b-478f-9439-44aa021aaaa7",
+      "name": "74. Использование данных Excel для диаграмм",
+      "sortOrder": 74
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "b3bc7047-c1e3-495b-b1f9-9402ce323fb6",
+      "name": "75. Изменение типа диаграммы",
+      "sortOrder": 75
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "fa57bd30-c9ab-411b-8ffb-adbf042b1761",
+      "name": "76. Изменение данных в диаграмме",
+      "sortOrder": 76
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "a47673e8-1d49-4f7f-9bab-e0396f2825dc",
+      "name": "77. Форматирование диаграмм",
+      "sortOrder": 77
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "1b3688ae-c93f-4c30-90cf-bc4e722dee9b",
+      "name": "78. Форматирование отдельных элементов диаграммы",
+      "sortOrder": 78
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "e1173a4e-f858-4637-ab15-c1d898729e65",
+      "name": "79. Дополнительные параметры форматирования",
+      "sortOrder": 79
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "9dac895b-b9cf-4e1f-8b9c-c92c6113e100",
+      "name": "8. Создание собственного многоуровневого списка",
+      "sortOrder": 8
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "efd68bdc-7a09-4eaa-8849-871460866cee",
+      "name": "80. Поиск по документу",
+      "sortOrder": 80
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "ed74aa89-1e36-44cc-a9e2-554951ac6b34",
+      "name": "81. Расширенный поиск",
+      "sortOrder": 81
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "534d21e7-ae15-4f36-b59c-d79ccedd947a",
+      "name": "82. Команда «Заменить»",
+      "sortOrder": 82
+    },
+    {
+      "categoryId": "_ktFGgs1v",
+      "id": "b9ccbab1-648d-42ed-86f9-2ee61ca06a16",
+      "name": "9. Определение нового стиля многоуровневого списка",
+      "sortOrder": 9
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "23ae78f5-3628-4b66-aa07-4531dbee2273",
+      "name": "1. Что такое стиль",
+      "sortOrder": 1
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "19e9ebaf-3984-4129-a925-6cdc88bb7423",
+      "name": "10. Сочетание стилей разных типов",
+      "sortOrder": 10
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "bd62eac7-5fbb-4744-b6cd-1a354ac9a550",
+      "name": "11. Смена стилей и удаление форматирования",
+      "sortOrder": 11
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "09116291-309c-4c20-9689-a11b64813548",
+      "name": "12. Тема документа",
+      "sortOrder": 12
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "13ef5d7e-1228-4e19-9394-02d1315288b1",
+      "name": "13. Настройка темы",
+      "sortOrder": 13
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "1e8d6ebd-36a0-4e3b-b370-ab11e54a79b0",
+      "name": "14. Дополнительные возможности настройки темы",
+      "sortOrder": 14
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "acd82a8a-38b1-4d69-ba8a-a3f736f802fb",
+      "name": "15. Использование табуляции в таблицах",
+      "sortOrder": 15
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "17bf5b4e-a420-43d9-9e8f-adb3cec256e8",
+      "name": "16. Добавление формул в таблицу",
+      "sortOrder": 16
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "2b5afa5e-03d9-4750-8d30-71615627b374",
+      "name": "17. Обновление результата в формуле и просмотр формулы",
+      "sortOrder": 17
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "ccea00c2-bece-4cce-be87-40dc06e6835b",
+      "name": "18. Редактирование и отключение формул",
+      "sortOrder": 18
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "0d682173-4d0f-4ee0-90be-d638f0849284",
+      "name": "19. Формулы с аргументом в виде диапазона",
+      "sortOrder": 19
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "15213ed9-6cd2-4ae2-aa95-281cd7bdf5ae",
+      "name": "2. Стили заголовков",
+      "sortOrder": 2
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "d0252002-ca4a-4911-b51e-d72ba4bef61b",
+      "name": "20. Повторение заголовков колонок на нескольких страницах",
+      "sortOrder": 20
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "49342835-1863-40c3-aee4-4f4a91100baf",
+      "name": "21. Контроль разрыва таблицы",
+      "sortOrder": 21
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "52e05737-4070-4791-847f-6d02209c603b",
+      "name": "22. Сортировка столбцов по данным",
+      "sortOrder": 22
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "462eaa8a-11f6-4a28-8458-9523c97d7374",
+      "name": "23. Что такое слияние",
+      "sortOrder": 23
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "92e8e726-5003-42e2-81f7-39741a955bdc",
+      "name": "24. Пошаговый мастер слияний",
+      "sortOrder": 24
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "7c63a1c4-2b40-4750-85bc-96760a9efcba",
+      "name": "25. Слияние документа с существующим списком данных",
+      "sortOrder": 25
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "dd684a48-61b3-48d1-9672-7becf7523fbd",
+      "name": "26. Путь к источнику данных при слиянии",
+      "sortOrder": 26
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "53c403dc-89e1-4074-8748-90eebfdeb483",
+      "name": "27. Изменение источника данных",
+      "sortOrder": 27
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "b9bd4d03-f8c8-4587-a2de-d4e7e814ad39",
+      "name": "28. Сортировка данных",
+      "sortOrder": 28
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "706289a0-582e-4ac2-af70-305113f00599",
+      "name": "29. Фильтрация данных",
+      "sortOrder": 29
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "186789f5-9e9e-4784-84ab-8ee3c246c47a",
+      "name": "3. Панель навигации. Перемещение по документу",
+      "sortOrder": 3
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "aeefd007-c146-41d1-b6a8-a3638629e016",
+      "name": "30. Поиск и удаление дубликатов в данных слияния",
+      "sortOrder": 30
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "d9e92b27-37b6-4d1b-9eb0-c19411f3915c",
+      "name": "31. Редактирование данных слияния в Word",
+      "sortOrder": 31
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "9f0d0202-f4fa-41f7-abe9-0e5ae7254f64",
+      "name": "32. Динамическое слияние с полем \"Если\"",
+      "sortOrder": 32
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "93e85235-d620-4afd-8401-d27f996562ca",
+      "name": "33. Блок адреса и строка приветствия",
+      "sortOrder": 33
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "792f1f40-9e8c-490c-b9e9-4c8c7880bb60",
+      "name": "34. Совместная работа наaд документом и изменение информации об авторе",
+      "sortOrder": 34
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "e5795dce-96ad-45df-97e0-84c162eef500",
+      "name": "35. Сравнение изменений",
+      "sortOrder": 35
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "2d23c45b-91c7-42d6-be8d-f365e2f65e43",
+      "name": "36. Объединение исправлений от нескольких авторов",
+      "sortOrder": 36
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "6d87b14b-2709-4f40-87a0-c18dbac838db",
+      "name": "37. Запись исправлений и добавление примечаний в документ",
+      "sortOrder": 37
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "f3d5ff92-5078-4c4b-a807-ce097ff77f45",
+      "name": "38. Проверка исправлений и примечаний",
+      "sortOrder": 38
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "028041ac-0fa7-4803-bfd3-4b109823db03",
+      "name": "39. Добавление подписей",
+      "sortOrder": 39
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "5aaf9756-b85e-4108-b412-e926428b2660",
+      "name": "4. Панель навигации. Работа со структурой",
+      "sortOrder": 4
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "4578a1a3-c5bc-44b3-8964-e979fc0baed5",
+      "name": "40. Добавление перекрестных ссылок",
+      "sortOrder": 40
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "2cfc8b44-41b8-48a2-ae4f-008a0e9da5de",
+      "name": "41. Обновление перекрестных ссылок",
+      "sortOrder": 41
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "317f62df-f1bc-4aeb-a8b0-7ea6953833fa",
+      "name": "42. Добавление закладок",
+      "sortOrder": 42
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "27eeede2-39ba-4996-a9d8-7aa6677ce9c8",
+      "name": "43. Добавление гиперссылок",
+      "sortOrder": 43
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "819eedd8-4dd8-4a5f-a75b-309e6925323f",
+      "name": "44. Добавление сносок",
+      "sortOrder": 44
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "06fa43db-3ae8-4932-8b14-022eb8a83d88",
+      "name": "45. Добавление концевых сносок",
+      "sortOrder": 45
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "00b95d69-7521-4401-8b9e-f0f4a4120fbc",
+      "name": "46. Добавление источников",
+      "sortOrder": 46
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "50faea95-1e8f-4c85-b873-d9cbef95d07e",
+      "name": "47. Управление источниками",
+      "sortOrder": 47
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "d0b4013d-b45a-4ab6-894a-058428a093fd",
+      "name": "48. Добавление и обновление списка литературы",
+      "sortOrder": 48
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "7c00c6c2-502c-4692-9996-537fbb306042",
+      "name": "49. Добавление титульной страницы",
+      "sortOrder": 49
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "77fc0cbf-f97f-456e-b24e-72ec61b9a0d1",
+      "name": "5. Панель навигации. Дополнительные возможности",
+      "sortOrder": 5
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "8e35b506-208b-471c-9f3a-31cbf25c0590",
+      "name": "50. Добавление оглавления",
+      "sortOrder": 50
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "11f886d4-13d2-44d2-9be6-086ba94eeeab",
+      "name": "51. Обновление оглавления",
+      "sortOrder": 51
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "df2a0e91-5fc3-43c1-99b2-d544b0058a01",
+      "name": "52. Изменение внешнего вида оглавления",
+      "sortOrder": 52
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "6c96277d-0759-4825-82d6-11ce038a32e6",
+      "name": "53. Добавление вспомогательных списков",
+      "sortOrder": 53
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "0d58a1a0-d568-43bf-80e4-c0be4b36f05e",
+      "name": "54. Добавление алфавитного указателя",
+      "sortOrder": 54
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "640b0785-3cd8-4ed4-acb8-4267ed93ee09",
+      "name": "55. Добавление дополнительных элементов, перекрестных ссылок и диапазонов в указатель",
+      "sortOrder": 55
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "21531694-3e81-4c50-89e5-7add4d7a998d",
+      "name": "56. Создание алфавитного указателя с помощью списка соответствия",
+      "sortOrder": 56
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "799a0ef4-e702-4619-a46e-b167d6302638",
+      "name": "57. Защита от просмотра и редактирования документа с помощью пароля",
+      "sortOrder": 57
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "1b92f4e9-a1aa-498f-8d70-399d8c8b0c2b",
+      "name": "58. Ограничения на редактирование документа",
+      "sortOrder": 58
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "0ab7f03b-7e91-4e7b-8ca3-85a66ff337e6",
+      "name": "59. Защита отдельных частей документа",
+      "sortOrder": 59
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "28bc28ba-16a9-43de-8b63-fd1ef61d011a",
+      "name": "6. Изменение стилей",
+      "sortOrder": 6
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "53c23397-ba6e-4882-9605-724cc3e73a43",
+      "name": "60. Запрет форматирования и пометка окончательного документа",
+      "sortOrder": 60
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "db15db02-b0ee-4205-bf12-c5879e723b9e",
+      "name": "7. Создание нового стиля",
+      "sortOrder": 7
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "8d68ecb1-3f34-4116-a9eb-becaa5d7deba",
+      "name": "8. Создание стиля на основе отформатированного текста",
+      "sortOrder": 8
+    },
+    {
+      "categoryId": "I6TyC_6_k",
+      "id": "5b999ccd-f14a-4b18-932f-356525c3fdd2",
+      "name": "9. Типы стилей текста – применение",
+      "sortOrder": 9
     }
   ]
 }

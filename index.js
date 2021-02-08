@@ -13,8 +13,11 @@ app.use(morgan('MORGAN :remote-addr HTTP/:http-version :status :method :url - :r
 //fix favicon error
 app.get('/favicon.ico', (req, res) => res.status(204).end());
 
+app.use('/video', express.static('video'));
+
 app.use(bodyParser.json());
 require('./src/modules/category/router')(app); //categories rourer
+require('./src/modules/video/router')(app); //video rourer
 
 app.get("/", (req, res) => {
   res.status(200).send("WHATABYTE: Food For Devs");

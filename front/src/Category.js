@@ -10,7 +10,7 @@ import {
 
 import categoryService from './services/category.service';
 
-
+import VideoList from './VideoList';
 
 export default function Category() {
 
@@ -60,13 +60,17 @@ function CategoriesList(props) {
 
     if (match.isExact) {
         return (
-            <ul className="list">
-                {(categories && categories.length > 0) ? (
-                    categories.map(cat => <li key={cat.id}><Link to={`${match.url}/${cat.id}`}>{cat.name}</Link> | <Link to={`/category/edit/${cat.id}`}>edit</Link></li>)
-                ) : (
-                    <p>No categories found</p>
-                )}
-            </ul>
+            <div>
+                <ul className="list">
+                    {(categories && categories.length > 0) ? (
+                        categories.map(cat => <li key={cat.id}><Link to={`${match.url}/${cat.id}`}>{cat.name}</Link> | <Link to={`/category/edit/${cat.id}`}>edit</Link></li>)
+                        
+                        ) : (
+                        <p>No categories found</p>
+                    )}
+                </ul>
+                <VideoList categotyId={id} />
+            </div>
         );
     }
 
@@ -75,7 +79,6 @@ function CategoriesList(props) {
 
             {category !== null &&
                 <h2><Link to={`${match.url}`}>{props.name || category.name}</Link> ID: {id}, MATCH: {JSON.stringify(match)}</h2>
-
             }
                 
 

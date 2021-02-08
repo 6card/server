@@ -9,6 +9,7 @@ export default function CategoryEdit() {
     const nameField = useFormField();
     const descriptionField = useFormField();
     const parentField = useFormField();
+    const sortField = useFormField()
 
     const [ category, setCategory ] = useState(null);
     const [ categories, setCategories ] = useState(null);
@@ -24,6 +25,7 @@ export default function CategoryEdit() {
         nameField.setValue(res.name);
         descriptionField.setValue(res.description);
         parentField.setValue(res.parentId);
+        sortField.setValue(res.sortOrder);
     }
 
     const getCategories = async () => {
@@ -36,7 +38,8 @@ export default function CategoryEdit() {
       categoryService.update(id, {
           name: nameField.value, 
           description: descriptionField.value,
-          parentId: parentField.value
+          parentId: parentField.value,
+          sortOrder: sortField.value
         });
     };
     return (
@@ -48,6 +51,10 @@ export default function CategoryEdit() {
         <div>
           <label htmlFor='description'>description</label>
           <textarea id='description' {...descriptionField} />
+        </div>
+        <div>
+          <label htmlFor='sort'>SortOrder</label>
+          <input type='text' id='sort' {...sortField} />
         </div>
         <div>
           <label htmlFor='parent'>parent category</label>

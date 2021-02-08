@@ -10,6 +10,7 @@ import {
 
 import Category from './Category';
 import CategoryEdit from './CategoryEdit';
+import Film from './Film';
 
 function App() {
   
@@ -26,6 +27,10 @@ function App() {
           </Route>
           <Route path="/category">
             <Category />
+          </Route>
+
+          <Route path="/film/:id">
+            <Film />
           </Route>
           
           <Route exact path="/">
