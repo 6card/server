@@ -1,6 +1,5 @@
 .bd-navbar {
     font-size: 1.125rem;
-    padding: 2rem 4rem;
 }
 .navbar-link.is-active:not(:focus):not(:hover), a.navbar-item.is-active:not(:focus):not(:hover) {
     background-color: #fafafa;
@@ -9,8 +8,12 @@
     border-top: 2px solid #f5f5f5;
 }
 
+.bd-container {
+    padding: 0 1rem;
+}
+
 .bd-breadcrumb {
-    padding: 1rem 0 ;
+    margin-top: 1rem;
 }
 
 .bd-category{

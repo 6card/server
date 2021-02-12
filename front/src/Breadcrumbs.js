@@ -23,7 +23,7 @@ export const BreadcrumbPortal = () => {
     }, []);
   
     return (
-      <nav className="breadcrumb" aria-label="breadcrumbs">
+      <nav className="breadcrumb bd-breadcrumb" aria-label="breadcrumbs">
         <ul ref={portalNodeRef} ></ul>
       </nav>
     );

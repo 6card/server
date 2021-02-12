@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useRouteMatch } from "react-router-dom";
 
-import videoService from './services/video.service';
 import {useHttp} from './hooks/http-hook';
 
 import { Breadcrumb } from './Breadcrumbs';
@@ -14,17 +13,13 @@ export default function Film({catId}) {
     const { request, error, isLoading, clearError } = useHttp();
 
     useEffect(() => {
-        console.log(id);
+        const getVideo = async () => {
+            const res = await request(`/api/videos/${catId}/${id}`);
+            setVideo(res);
+        }
         getVideo();
-    }, [id]);
+    }, [id, catId]);
 
-    const getVideo = async () => {
-        //let res = await videoService.getById(id);
-        const res = await request(`/api/videos/${catId}/${id}`);
-        setVideo(res);
-    }
-
-    
         return (
             <div>
                 <Breadcrumb to={match.url}>{video ? video.name : ''}</Breadcrumb>

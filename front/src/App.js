@@ -2,7 +2,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useRouteMatch,
   Redirect
 } from "react-router-dom";
 
@@ -20,7 +19,7 @@ function App() {
       <Router>
         <Nav />
         <main className="bd-main">
-        <div className="container is-max-desktop">
+        <div className="container bd-container is-max-desktop">
 
           <BreadcrumbProvider>
             <BreadcrumbPortal />
@@ -51,9 +50,3 @@ function App() {
 }
 
 export default App;
-
-function Home() {
-  let match = useRouteMatch();
-  return <h2>Home{JSON.stringify(match)}</h2>;
-}
-
