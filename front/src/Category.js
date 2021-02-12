@@ -1,93 +1,152 @@
 import { useState, useEffect } from "react";
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
     Link,
     useRouteMatch,
     useParams
-  } from "react-router-dom";
+} from "react-router-dom";
 
-import categoryService from './services/category.service';
-
+import { useHttp } from './hooks/http-hook';
 import VideoList from './VideoList';
+import Film from './Film';
 
-export default function Category() {
+import { Breadcrumb } from './Breadcrumbs';
 
-    let {url, path} = useRouteMatch();
-
-    const cat = {
-        name: 'Категории'
-    }
-    
-
-    return (
-        <div>
-            <h3>Please select a topic.</h3>
-            <Switch>
-                <Route path={`${path}(/:id)?`}>
-                    <CategoriesList name={cat.name} url={url}/>
-                </Route>
-            </Switch>
-        </div>
-    );
-}
-
-function CategoriesList(props) {
+export default function Categories({name}) {
 
     let { id } = useParams();
     let match = useRouteMatch();
 
-    const [ categories, setCategories ] = useState(null);
     const [ category, setCategory ] = useState(null);
+    const [ notFound, setNotFound ] = useState(false);
+
+    const { request, error, isLoading, clearError } = useHttp();
 
     useEffect(() => {
-        getCategories();
-        if (id)
-            getCategory();
+        const abortCtrl = new AbortController();
+        //abortCtrl.signal.addEventListener('abort', () => console.log("отмена!"));
+
+        if (id) {
+            getCategory({ signal: abortCtrl.signal });
+        }
+        return () => abortCtrl.abort();
     }, [id]);
 
-  
-    const getCategories = async () => {
-        let res = await categoryService.getAllByParentId(id || '');
-        setCategories(res);
+
+    const getCategory = async (opts) => {
+        const res = await request(`/api/categories/${id}`, opts);
+        if (typeof res === 'undefined' ) {
+            setNotFound(true);
+        } else {
+            setCategory(res);
+        }
+        
     }
 
-    const getCategory = async () => {
-        let res = await categoryService.getById(id || '');
-        setCategory(res);
+    const renderSwitch = () => {
+        return (
+            <CategoryRouter category={category} name={name}/>
+        );
+    }
+
+    const renderFound = () => {
+         return (
+            <>
+                <CategoryList parentId={id} />
+                <VideoList categotyId={id} />
+            </>
+         )
+     }
+
+    if (notFound) {
+        return ( 
+            <h2>Category not found!</h2>
+        );
     }
 
     if (match.isExact) {
         return (
             <div>
-                <ul className="list">
-                    {(categories && categories.length > 0) ? (
-                        categories.map(cat => <li key={cat.id}><Link to={`${match.url}/${cat.id}`}>{cat.name}</Link> | <Link to={`/category/edit/${cat.id}`}>edit</Link></li>)
-                        
-                        ) : (
-                        <p>No categories found</p>
-                    )}
-                </ul>
-                <VideoList categotyId={id} />
+                <Breadcrumb to={match.url}>{category ? category.name : name}</Breadcrumb>
+                <h1 className={`title ${!category && isLoading && 'animated-background'}` }>{category && category.name}</h1>
+                {(name || category) && renderFound()}
             </div>
         );
     }
+    
 
+    return renderSwitch();
+}
+
+const CategoryList = ({ parentId }) => {
+    const { url } = useRouteMatch();
+    const { request, error, isLoading, clearError } = useHttp();
+    const [ categories, setCategories ] = useState(null);
+
+    useEffect(() => {
+        const abortCtrl = new AbortController();
+
+        const getCategories = async (opts) => {
+            const res = await request(`/api/categories/parent/${parentId || ''}`, opts);
+            setCategories(res);
+        }
+        getCategories({ signal: abortCtrl.signal });
+        return () => abortCtrl.abort();
+    }, [parentId]);
+
+    if (categories && categories.length > 0) {
+        return (
+            <div className="columns is-multiline">{categories.map( cat => <CategoryItem key={cat.id} url={url} cat={cat} />)}</div>
+        );
+    } else {
+        return (
+            <></>
+        );
+    }
+    //{ isLoading && <div className="columns is-multiline"><CategoryItem url={url} /></div> }
+}
+
+const CategoryItem = ({ url, cat }) => {
     return (
-        <div>
-
-            {category !== null &&
-                <h2><Link to={`${match.url}`}>{props.name || category.name}</Link> ID: {id}, MATCH: {JSON.stringify(match)}</h2>
-            }
-                
-
-            <Switch>
-                <Route path={`${match.url}/:id`}>
-                    <CategoriesList cat={props.name} url={match.url}/>
-                </Route>
-            </Switch>
-
+        <div className="column is-one-third">
+            <div className="card bd-category">
+                <div className="card-image">
+                    <figure className="image">
+                        {cat 
+                        ? <img src="https://i.ytimg.com/vi/S-nHYzK-BVg/maxresdefault.jpg" alt="Placeholder image" /> 
+                        :<div className="image-placeholder animated-background"></div>
+                        }
+                    </figure>
+                </div>
+                <div className="card-content">
+                    <h4 className={`title is-5 ${!cat && 'animated-background'}` }>
+                        {cat && <Link to={`${url}/${cat.id}`}>{cat.name}</Link>}
+                    </h4>
+                </div>
+            </div>
+            
         </div>
     );
+}
+
+const CategoryRouter = ({ category, name }) => {
+    const { url } = useRouteMatch();
+    return (
+        <>
+        <Breadcrumb to={url}>{category ? category.name : name}</Breadcrumb>
+        
+        <Switch>
+            <Route path={`${url}/:id([a-z0-9]+-[a-z0-9]+-[a-z0-9]+-[a-z0-9]+-[a-z0-9]+)`}>
+                <Film catId={category && category.id} />
+            </Route>
+            
+            <Route path={`${url}/:id`}>
+                <Categories cat={name} url={url}/>
+            </Route>
+
+        </Switch>
+        </>
+    );
+
 }

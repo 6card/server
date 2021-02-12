@@ -11,9 +11,16 @@ module.exports = (app) => {
     return res.status(200).send(videoModel.findAllByCategoryId(id || null));
   });
 
-  app.get(`/videos/:id`, async (req, res) => {
-    const { id } = req.params;
-    return res.status(200).send(videoModel.findById(id));
+  app.get(`/videos/:catId/:id`, async (req, res) => {
+    const { id, catId } = req.params;
+    /*
+    await new Promise(function(resolve, reject){
+			setTimeout(function(){
+				resolve();
+			}, 1000)
+		});
+    */
+    return res.status(200).send(videoModel.findByIdAndCatId(id, catId));
   });
 
   app.post(`/videos`, async (req, res) => {

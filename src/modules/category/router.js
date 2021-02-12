@@ -45,11 +45,25 @@ module.exports = (app) => {
 
   app.get(`/categories/parent(/:id)?`, async (req, res) => {
     const { id } = req.params;
+    /*
+    await new Promise(function(resolve, reject){
+			setTimeout(function(){
+				resolve();
+			}, 2000)
+		});
+    */
     return res.status(200).send(categoryModel.findAllByParentId(id || null));
   });
 
   app.get(`/categories/:id`, async (req, res) => {
     const { id } = req.params;
+    /*
+    await new Promise(function(resolve, reject){
+			setTimeout(function(){
+				resolve();
+			}, 1000)
+		});
+    */
     return res.status(200).send(categoryModel.findById(id));
   });
 

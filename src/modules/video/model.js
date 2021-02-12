@@ -19,6 +19,12 @@ module.exports.findById = (id) => {
         .value();
 }
 
+module.exports.findByIdAndCatId = (id, categoryId) => {
+    return db.get('videos')
+        .find({ id, categoryId })
+        .value();
+}
+
 module.exports.findAllByCategoryId = (categoryId) => {
     return db.get('videos')
         .filter({ categoryId })

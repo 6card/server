@@ -2,13 +2,14 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   useRouteMatch,
-  useParams
+  Redirect
 } from "react-router-dom";
 
+import Nav from './Nav';
+import { BreadcrumbProvider, Breadcrumb, BreadcrumbPortal } from './Breadcrumbs';
 
-import Category from './Category';
+import Categories from './Category';
 import CategoryEdit from './CategoryEdit';
 import Film from './Film';
 
@@ -16,43 +17,35 @@ function App() {
   
   return (
     <div className="App">
-        
       <Router>
-          <Link to="/">Home</Link>
-          <Link to="/category">Category</Link>
-          <Link to="/category/tYBkXlI8f">Categories</Link>
-        <Switch>
-        <Route path="/category/edit/:id">
-            <CategoryEdit />
-          </Route>
-          <Route path="/category">
-            <Category />
-          </Route>
+        <Nav />
+        <main className="bd-main">
+        <div className="container is-max-desktop">
 
-          <Route path="/film/:id">
-            <Film />
-          </Route>
-          
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
+          <BreadcrumbProvider>
+            <BreadcrumbPortal />
+            <Breadcrumb to="/">Главная</Breadcrumb>
+            
+            <Switch>
+            <Route path="/category/edit/:id">
+                <CategoryEdit />
+              </Route>
+              <Route path="/category">
+                <Categories name="Категории" />
+              </Route>
+
+              <Route path="/film/:id">
+                <Film />
+              </Route>
+              
+              <Route exact path="/">
+                <Redirect to="/category" />
+              </Route>
+            </Switch>
+          </BreadcrumbProvider>
+        </div>
+        </main>
       </Router>
-      
-      <header className="App-header">
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
