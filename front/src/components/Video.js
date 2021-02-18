@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { useParams, useRouteMatch } from "react-router-dom";
+import { Link, useParams, useRouteMatch } from "react-router-dom";
 
-import {useHttp} from './hooks/http-hook';
+import {useHttp} from '../hooks/http-hook';
 
+import videoService from '../services/video.service';
 import { Breadcrumb } from './Breadcrumbs';
 
-export default function Film({catId}) {
+export default function Video({catId}) {
 
     let { id } = useParams();
     let match = useRouteMatch();
@@ -32,5 +33,37 @@ export default function Film({catId}) {
                 }
             </div>
         );
+
+}
+
+
+
+export function VideoList(props) {
+
+    let { id } = useParams();
+    let { url } = useRouteMatch();
+    const { request, error, isLoading, clearError } = useHttp();
+    const [ videos, setVideos ] = useState(null);
+
+    useEffect(() => {
+        const getVideos = async () => {
+            //let res = await videoService.getAllCategoryId(id || '');
+            const res = await request(`/api/videos/category/${id || ''}`);
+            setVideos(res);
+        }
+        getVideos();
+    }, [props.categotyId, id]);
+
+    return (
+        <ul>
+
+            {videos !== null &&
+                videos.map( v => {
+                    return <li key={v.id}><Link to={`${url}/${v.id}`}>{v.name}</Link></li>
+                })
+            }
+
+        </ul>
+    );
 
 }

@@ -5,20 +5,20 @@ import {
   Redirect
 } from "react-router-dom";
 
-import Nav from './Nav';
-import { BreadcrumbProvider, Breadcrumb, BreadcrumbPortal } from './Breadcrumbs';
+import Nav from './components/Nav';
+import { BreadcrumbProvider, Breadcrumb, BreadcrumbPortal } from './components/Breadcrumbs';
 
-import Categories from './Category';
+import Categories from './components/Category';
 import CategoryEdit from './CategoryEdit';
-import Film from './Film';
+import Footer from "./components/Footer";
 
 function App() {
   
   return (
-    <div className="App">
+    <>
       <Router>
         <Nav />
-        <main className="bd-main">
+        <main className="bd-main" id="main">
         <div className="container bd-container is-max-desktop">
 
           <BreadcrumbProvider>
@@ -32,10 +32,6 @@ function App() {
               <Route path="/category">
                 <Categories name="Категории" />
               </Route>
-
-              <Route path="/film/:id">
-                <Film />
-              </Route>
               
               <Route exact path="/">
                 <Redirect to="/category" />
@@ -44,8 +40,9 @@ function App() {
           </BreadcrumbProvider>
         </div>
         </main>
+        <Footer />
       </Router>
-    </div>
+    </>
   );
 }
 

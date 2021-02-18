@@ -7,9 +7,8 @@ import {
     useParams
 } from "react-router-dom";
 
-import { useHttp } from './hooks/http-hook';
-import VideoList from './VideoList';
-import Film from './Film';
+import { useHttp } from '../hooks/http-hook';
+import Video, { VideoList } from './Video';
 
 import { Breadcrumb } from './Breadcrumbs';
 
@@ -138,10 +137,11 @@ const CategoryRouter = ({ category, name }) => {
         
         <Switch>
             <Route path={`${url}/:id([a-z0-9]+-[a-z0-9]+-[a-z0-9]+-[a-z0-9]+-[a-z0-9]+)`}>
-                <Film catId={category && category.id} />
+                {category && <Video catId={category.id} />}
             </Route>
             
             <Route path={`${url}/:id`}>
+                
                 <Categories cat={name} url={url}/>
             </Route>
 
