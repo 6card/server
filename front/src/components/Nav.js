@@ -35,6 +35,16 @@ export default function Nav() {
                     </NavLink>
                 </div>
             </div>
+
+            <div className="navbar-end">
+                <div className="navbar-item">
+                    <div className="buttons">
+                        <a className="button is-primary">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
         </nav>
     )
 }

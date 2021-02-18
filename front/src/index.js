@@ -2,11 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Admin from './Admin';
 import reportWebVitals from './reportWebVitals';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+
+        <Route exact path="/admin(/.+)?">
+          <Admin />
+        </Route>
+
+        <Route path="/">
+          <App />
+        </Route>
+
+      </Switch>
+    </Router>    
   </React.StrictMode>,
   document.getElementById('root')
 );
